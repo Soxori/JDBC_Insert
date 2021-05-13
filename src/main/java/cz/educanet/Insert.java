@@ -23,5 +23,6 @@ public class Insert {
         preparedStatement.setString(3, glossary);
         preparedStatement.setInt(4, price);
         preparedStatement.executeUpdate();
+        connection.close();
     }
 }
